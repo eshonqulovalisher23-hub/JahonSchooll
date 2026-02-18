@@ -1,0 +1,686 @@
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+
+       :root {
+           --background: #109e00;
+           --color: #162956;
+           --span: #838383;
+           --radius: 10px;
+           --background2: #fff;
+           --quti: #ebebeb;
+           --sss: #585b71;
+       }
+
+       [ data-theme="dark"] {
+           --background2: #070920;
+           --color: #ffffff;
+           --quti: #273139;
+           --sss: #ffffff;
+
+
+       }
+
+       [data-theme="dark"] .quti {
+           background-image: url('https://static.tildacdn.one/tild6130-3265-4237-b963-373566303738/Frame_2087326401.svg');
+           filter: brightness(0.6);
+       }
+
+       [data-theme="dark"] .kard {
+           background-image: url('https://static.tildacdn.one/tild3664-6330-4636-b936-656432393631/Frame_2087326461.svg');
+           filter: brightness(0.6);
+       }
+
+       .quti,
+       .kard {
+           transition: 0.4s ease;
+       }
+
+       body {
+           background-color: var(--background2);
+       }
+
+       header {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           padding: 20px 150px;
+           border-bottom: 2px solid rgb(212, 205, 205);
+           position: fixed;
+           left: 0;
+           right: 0;
+           z-index: 99;
+           background-color: var(--background2);
+       }
+
+       span {
+           color: var(--background);
+       }
+
+       .header {
+           display: flex;
+           align-items: center;
+           gap: 20px;
+       }
+
+       .bayroq {
+           display: flex;
+       }
+
+       .bayroq img {
+           width: 30px;
+           height: 25px;
+           border-radius: var(--radius);
+       }
+
+       .tugma {
+           border: none;
+           background: var(--background);
+           color: #fff;
+           border-radius: var(--radius);
+           padding: 7px 17px;
+           font-size: 20px;
+
+       }
+
+       .bayroq button {
+           border: none;
+           background-color: var(--background2);
+           color: var(--span);
+       }
+
+
+       .dark {
+           border: none;
+           color: var(--span);
+           background-color: var(--background2);
+           font-size: 26px;
+       }
+
+       header h3 {
+           font-size: 20px;
+           color: var(--span);
+       }
+
+       .hero-ichi {
+           padding-right: 12px;
+           background: var(--background);
+           border-radius: var(--radius);
+           width: 70%;
+       }
+
+       .hero-ichi div {
+           background-color: rgb(230, 230, 230);
+           border-radius: var(--radius);
+           padding: 10px;
+           background-color: var(--quti);
+           color: var(--color);
+       }
+
+       .hero {
+           display: flex;
+           align-items: center;
+           padding: 20px 150px;
+           gap: 100px;
+           padding: 100px;
+       }
+
+       .hero img {
+           width: 40%;
+       }
+
+       .hero-text h1 {
+           font-size: 77px;
+           font-weight: bold;
+           color: var(--color);
+       }
+
+       .hero-text p {
+           font-size: 20px;
+           font-weight: 600;
+           color: var(--span);
+           width: 90%;
+       }
+
+       .a2 {
+           padding: 25px 100px;
+           border-radius: 17px;
+
+
+       }
+
+       .yozuv {
+
+
+           text-align: center;
+
+           padding: 20px 300px;
+       }
+
+       .yozuv h1 {
+           font-size: 60px;
+           color: var(--color);
+           font-weight: bold;
+       }
+
+       .yozuv p {
+
+           font-size: 20px;
+           font-weight: 600;
+           color: var(--span);
+
+       }
+
+       .qutilar {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           grid-template-rows: repeat(2, 1fr);
+           grid-template-areas:
+               'quti1 quti2 '
+               'quti3 quti4 '
+           ;
+           gap: 20px;
+           margin: 10px 150px;
+       }
+
+       .quti {
+           grid-area: quti1;
+
+           background-image: url('https://static.tildacdn.one/tild6130-3265-4237-b963-373566303738/Frame_2087326401.svg');
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           padding: 20px;
+           border-radius: var(--radius);
+       }
+
+       .quti2 {
+           grid-area: quti2;
+           background-image: url('https://static.tildacdn.one/tild6130-3265-4237-b963-373566303738/Frame_2087326401.svg');
+       }
+
+       .quti3 {
+           grid-area: quti3;
+           background-image: url('https://static.tildacdn.one/tild6130-3265-4237-b963-373566303738/Frame_2087326401.svg');
+       }
+
+       .quti4 {
+           grid-area: quti4;
+           background-image: url('https://static.tildacdn.one/tild6130-3265-4237-b963-373566303738/Frame_2087326401.svg');
+       }
+
+       .kard {
+           background-image: url('https://static.tildacdn.one/tild3664-6330-4636-b936-656432393631/Frame_2087326461.svg');
+           background-size: cover;
+           height: 280px;
+           border-radius: var(--radius);
+           padding: 20px;
+       }
+
+       .kard1 {
+           grid-area: quti1;
+       }
+
+       .kard2 {
+           grid-area: quti2;
+       }
+
+       .kard3 {
+           grid-area: quti3;
+       }
+
+       .kard4 {
+           grid-area: quti4;
+       }
+
+       .kard-ichi {
+           width: 220px;
+           margin-left: 80px;
+           margin-top: 15px;
+       }
+
+       .kard p {
+           color: var(--span);
+           margin: 0;
+       }
+
+       .kard h5 {
+           color: #162956;
+           font-size: 16px;
+           margin: 0;
+
+       }
+
+       .kard-ichi2 {
+           width: 320px;
+           margin-left: 155px;
+           margin-top: 33px;
+       }
+
+       .kard-ichi2 p {
+           color: #fff;
+       }
+
+       .kard-ichi2 h5 {
+           color: #e1e1e1;
+       }
+
+       .boxes {
+           display: flex;
+           width: 100%;
+           align-items: center;
+           gap: 30px;
+           padding: 16px;
+           background-color: var(--quti);
+           border-radius: 15px;
+       }
+
+       .box {
+           display: flex;
+           flex-direction: column;
+           gap: 20px;
+       }
+
+       .boxes h4 {
+           font-size: 20px;
+           color: var(--color);
+       }
+
+       .bola {
+           width: 30%;
+
+       }
+
+       main {
+           display: flex;
+           align-items: center;
+           margin: 20px 100px;
+           gap: 40px;
+       }
+
+       .karopka {
+
+           border-radius: 20px;
+           background-color: #109e00;
+           padding: 20px;
+       }
+
+       .karopka div {
+           padding: 10px;
+           background-color: #fff;
+           border-radius: 20px;
+           width: 80px;
+
+       }
+
+       .karopkalar {
+           display: flex;
+           gap: 30px;
+           margin: 20px 150px;
+       }
+
+       .karopka p {
+           color: #dcdcdc;
+       }
+
+       .karopka h2 {
+           color: #ffffff;
+       }
+
+       .karopka button {
+           border: none;
+           background: #fff;
+           color: #109e00;
+           border-radius: 20px;
+           padding: 20px;
+           font-size: 20px;
+           width: 100%;
+           font-weight: bold;
+
+       }
+
+       .card {
+           border-radius: 22px;
+           min-width: 300px;
+           padding-bottom: 20px;
+           background-color: var(--quti);
+           border: none;
+       }
+
+       .card p {
+
+           color: var(--span);
+       }
+
+       .card h2 {
+           color: var(--color);
+       }
+
+
+       .card-body {
+           padding: 10px 20px;
+       }
+
+       .akkauntlar {
+           display: flex;
+           overflow-x: scroll;
+           max-width: 1500px;
+           padding: 0 150px;
+           gap: 30px;
+           margin: 20px;
+            overflow-y: scroll;
+    scrollbar-width: none;
+       }
+
+       .www {
+           display: flex;
+           justify-content: center;
+           margin: 20px;
+       }
+
+       .azizbek {
+           padding: 30px 20px;
+           border-radius: 20px;
+           background-color: var(--quti);
+           width: 90%;
+
+       }
+
+       .azizbek h1 {
+           color: var(--color);
+       }
+
+       .azizbek p {
+           color: var(--sss);
+       }
+
+       .ota-quti {
+           display: flex;
+           flex-direction: column;
+           gap: 170px;
+       }
+
+       .section {
+           display: flex;
+           gap: 50px;
+           justify-content: center;
+           margin: 20px 150px;
+       }
+
+       .cha {
+           margin-top: 170px;
+       }
+
+       .form {
+           display: flex;
+           justify-content: center;
+           background-color: #109e00;
+           text-align: center;
+           padding: 20px;
+       }
+
+       input {
+           display: block;
+           border: none;
+           min-width: 300px;
+           border-radius: 20px;
+           padding: 20px;
+           margin: 10px 80px;
+           background-color: #ffffff68;
+           color: white;
+       }
+
+       .GGG {
+           background-color: #fff;
+           color: #109e00;
+           min-width: 400px;
+           border-radius: 20px;
+           padding: 20px;
+           margin: 10px 80px;
+
+       }
+
+       .form-ichi {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           padding: 50px;
+           color: #fff;
+
+           max-width: 800px;
+       }
+
+       .form-ichi h1 {
+           font-size: 66px;
+           font-weight: bold;
+       }
+
+       details {
+           background-color: var(--quti);
+           margin: 10px 200px;
+           padding: 15px 30px;
+           border-radius: var(--radius);
+           color: var(--color);
+
+       }
+
+       summary {
+           font-size: 25px;
+           font-weight: bold;
+
+       }
+
+       .logo button {
+           padding: 20px;
+           border: none;
+           border-radius: 15px;
+           background-color: #ffffff;
+           color: #109e00;
+           font-size: 20px;
+           font-weight: bold;
+       }
+
+       .logo {
+           display: flex;
+           flex-direction: column;
+           gap: 30px;
+           width: 20%;
+       }
+
+       footer {
+           background-color: #109e00;
+           padding: 40px 150px;
+           margin-top: 30px;
+       }
+
+       .footer {
+           display: flex;
+           justify-content: space-evenly;
+           border-bottom: 2px solid rgb(165, 165, 165);
+       }
+
+       .footer h2 {
+           color: white;
+       }
+
+       .footer p {
+           color: rgba(234, 230, 230, 0.76);
+           font-size: 18px;
+       }
+
+       .footer img {
+           border-radius: 17px;
+           margin-bottom: 20px;
+       }
+
+       .chiziq {
+           display: flex;
+           justify-content: space-between;
+           margin: 30px 0;
+           color: #ffffff;
+       }
+.tugma:hover{
+    background-color: #74df17;
+     transform: scale(1.1);
+    transition: 0.4;
+}
+.hover:hover{
+    transform: scale(1.2);
+    transition: 500ms;
+    background-color: #fff;
+}
+.iconcha{
+    position: absolute;
+    top: 150px;
+    right: 450px;
+}
+       @media(max-width: 1100px) {
+           header {
+               padding: 20px;
+           }
+
+           .hero {
+               flex-direction: column;
+               padding: 40px;
+               padding-top: 120px;
+           }
+
+           .logo {
+               width: 100px;
+           }
+
+           .hero img {
+               width: 100%;
+           }
+
+           .hero-ichi {
+
+               width: 100%;
+           }
+
+           .tug {
+               display: none;
+           }
+
+           .hero-text h1 {
+               font-size: 35px;
+
+           }
+
+           .yozuv h1 {
+               font-size: 30px;
+               color: var(--color);
+               font-weight: bold;
+           }
+
+           .ai {
+               display: none;
+           }
+
+           .a2 {
+               padding: 20px 80px;
+           }
+
+           .bola {
+               width: 100%;
+           }
+
+           .qutilar {
+               display: grid;
+               grid-template-columns: repeat(1, 1fr);
+               grid-template-areas:
+                   'quti1'
+                   ' quti2 '
+                   'quti3'
+                   ' quti4 '
+               ;
+               gap: 20px;
+               margin: 20px;
+           }
+
+           .yozuv {
+               padding: 20px;
+           }
+
+           .kard {
+               display: none;
+           }
+
+           main {
+               display: flex;
+               flex-direction: column;
+               margin: 20px;
+           }
+
+           .karopkalar {
+               flex-direction: column;
+               margin: 20px;
+           }
+
+           .section {
+               flex-direction: column;
+               margin: 50px 20px;
+           }
+
+           .ota-quti {
+
+               gap: 50px;
+           }
+
+           .azizbek {
+               width: 100%;
+           }
+
+           .cha {
+               display: none;
+           }
+
+           .form-ichi {
+               padding: 20px;
+               max-width: 400px;
+           }
+
+           .form {
+               margin: 0;
+           }
+
+           input {
+               margin: 10px 0;
+           }
+
+           .GGG {
+               margin: 10px 0;
+               min-width: 20%;
+           }
+
+           .form-ichi h1 {
+               font-size: 30px;
+           }
+
+           details {
+               margin: 20px;
+           }
+
+           summary {
+               font-size: 17px;
+           }
+
+           .footer {
+               flex-direction: column;
+           }
+
+           footer {
+               padding: 20px;
+               text-align: center;
+           }
+
+           .logo {
+               width: 100%;
+           }
+
+           .chiziq {
+               flex-direction: column;
+           }
+       }
